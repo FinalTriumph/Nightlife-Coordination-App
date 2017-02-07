@@ -1,0 +1,33 @@
+<head>
+    <link href="/public/css/main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+    <title>Home - Nightlife Coordination App</title>
+</head>
+
+<body>
+    <div class="head">
+        <h1>Nightlife Coordination App</h1>
+        <h2>Welcome, <span id="displayName"></span>!</h2>
+        <div id="nav">
+            <a href="/" class="btn sign-btn" id="active">Home</a>
+            <a href="/mybars" class="btn sign-btn">My Bars</a>
+            <a href="/twitter-logout" class="btn sign-btn">Sign out</a>
+        </div>
+    </div>
+    <br>
+    <div>
+        <input name="term" type="text" id="search-term" placeholder="Area"/>
+        <button id="search" onclick="getbars()" class="gbtn">Search</button>
+    </div>
+    <div id="loader"></div>
+    <div id="results"></div>
+    <div id="ment">
+        <p3>To find bars in specified area, this application is using 
+        <a href="https://www.yelp.com/developers/documentation/v2/overview" target="_blank" class="yelphref">Yelp API</a>.</p3>
+    </div>
+</body>
+
+<script type="text/javascript" src="controllers/general.js"></script>
+<script type="text/javascript" src="controllers/userInfo.js"></script>
+<script type="text/javascript" src="controllers/getBars.js"></script>
+<script type="text/javascript" src="controllers/going.js"></script>

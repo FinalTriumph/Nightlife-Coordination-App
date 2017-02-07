@@ -1,0 +1,144 @@
+body {
+    background-color: #222;
+    color: #fff;
+    opacity: 0;
+    text-align: center;
+    font-family: "Nunito";
+}
+h1 {
+    text-shadow: 0px 2px 1px #a9b2b1;
+}
+h2 {
+    text-shadow: 0px 1px 1px #a9b2b1;
+}
+.bardiv {
+    background-color: #DBDBDB;
+    color: #000;
+    width: 80%;
+    min-height: 100px;
+    white-space: nowrap;
+    margin: 20px auto auto auto;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    text-align: left;
+    overflow: auto;
+    padding: 10px;
+    box-shadow: 0px 5px 15px 1px #111;
+}
+.barimage {
+    border-radius: 3px;
+    height: 100px;
+    width: 100px;
+}
+.textdiv {
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+}
+.bartext {
+    white-space: normal;
+}
+#loader {
+    border: 15px solid #eee;
+    border-top: 15px solid #777;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1.5s linear infinite;
+    margin: 30px auto auto auto;
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.gbtn {
+    margin-left: 30px;
+    background-color: #e0e0e0;
+    border: 1px solid #555;
+    border-radius: 3px;
+    width: 120px;
+    height: 31px;
+    padding-top: 2px;
+}
+.gbtn:hover {
+    background-color: #ccc;
+    cursor: pointer; 
+    cursor: hand;
+}
+#search {
+    margin-left: 0px;
+    border-color: #fff;
+}
+.sign-btn {
+    padding: 10px 35px;
+    background-color: #e0e0e0;
+    color: #000;
+    text-decoration: none;
+    margin: -3px;
+}
+#active {
+    background-color: #bdbdbd;
+}
+#siwtw {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin: 50px;
+}
+.sign-btn:hover, #active:hover {
+    background-color: #ccc;
+    color: #000;
+}
+#siwtw {
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+#nav {
+    margin: 30px auto 10px auto;
+    border: 2px solid #fff;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 34px;
+    width: 370px;
+    padding-top: 11px;
+}
+#ment {
+    margin: 40px;
+}
+#nobarsyet {
+    min-height: 20px;
+    padding: 20px;
+}
+a {
+    color: #000;
+}
+a:hover {
+    color: #777;
+}
+button, input {
+    font-family: "Nunito";
+}
+input {
+    min-width: 200px;
+    width: 30%;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding: 3px;
+    padding-left: 10px;
+}
+#twimg {
+    height: 22px;
+    margin-left: -20px;
+    margin-bottom: -6px;
+    margin-right: 15px;
+    opacity: 0.7;
+}
+.goingcnt {
+    margin-left: 30px;
+}
+.yelphref {
+    color: #eee;
+}

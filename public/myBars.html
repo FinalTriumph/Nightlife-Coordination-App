@@ -1,0 +1,25 @@
+<head>
+    <link href="/public/css/main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+    <title>My Bars - Nightlife Coordination App</title>
+</head>
+
+<body>
+    <div class="head">
+        <h1>Nightlife Coordination App</h1>
+        <h2>Welcome, <span id="displayName"></span>!</h2>
+        <div id="nav">
+            <a href="/" class="btn sign-btn">Home</a>
+            <a href="/mybars" class="btn sign-btn" id="active">My Bars</a>
+            <a href="/twitter-logout" class="btn sign-btn">Sign out</a>
+        </div>
+    </div>
+    <br>
+    <div id="loader"></div>
+    <div id="results"></div>
+</body>
+
+<script type="text/javascript" src="controllers/general.js"></script>
+<script type="text/javascript" src="controllers/userInfo.js"></script>
+<script type="text/javascript" src="controllers/getMyBars.js"></script>
+<script type="text/javascript" src="controllers/going.js"></script>
