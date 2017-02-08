@@ -1,9 +1,10 @@
 "use strict";
 
+require("dotenv").load();
 var path = process.cwd();
 var Yelp = require('yelp');
 var yelp = new Yelp({
-  consumer_key: process.env.YELP_KEY,
+  consumer_key: process.env.YELP_Consumer_KEY,
   consumer_secret: process.env.YELP_CONSUMER_SECRET,
   token: process.env.YELP_TOKEN,
   token_secret: process.env.YELP_TOKEN_SECRET
@@ -170,6 +171,4 @@ module.exports = function(app, passport) {
                 res.json(allBars);
             });
         });
-
-    
 };

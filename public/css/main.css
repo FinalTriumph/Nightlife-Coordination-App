@@ -1,14 +1,14 @@
 body {
     background-color: #222;
+    background-image: url(https://i.imgsafe.org/a0a9d94e75.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
     color: #fff;
     opacity: 0;
     text-align: center;
     font-family: "Nunito";
 }
-h1 {
-    text-shadow: 0px 2px 1px #a9b2b1;
-}
-h2 {
+h1, h2 {
     text-shadow: 0px 1px 1px #a9b2b1;
 }
 .bardiv {

@@ -2,7 +2,6 @@
 
 var user;
 
-
 document.getElementById("results").innerHTML = "";
 document.getElementById("loader").style.display = "block";
     
@@ -67,7 +66,6 @@ ready(ajaxRequest("GET", apiUrl, function(data) {
         newAnc.innerHTML = bar.name;
         newTextDiv.appendChild(newAnc);
             
-            
         var newGo = document.createElement("p1");
         newGo.className += "goingcnt";
         newGo.innerHTML = bar.going.length;
@@ -111,9 +109,7 @@ ready(ajaxRequest("GET", apiUrl, function(data) {
             newTextDiv.appendChild(newRemove);
                 
         }
-       
-            
-            
+        
         var newBrake = document.createElement("br");
         newTextDiv.appendChild(newBrake);
        

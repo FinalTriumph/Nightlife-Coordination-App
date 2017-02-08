@@ -5,7 +5,6 @@ var user;
 if (localStorage.NCAbyFT) {
     var existTerm = JSON.parse(localStorage.NCAbyFT);
     if (!existTerm.replace(/\s/g, '').length) {
-        localStorage.removeItem("NCAbyFT");
         document.getElementById("search-term").value = "";
     } else {
         document.getElementById("search-term").value = existTerm;
@@ -20,7 +19,7 @@ function cantFind(){
         var newdiv = document.createElement("div");
         newdiv.className += "bardiv";
         newdiv.setAttribute("id", "nobarsyet");
-        newdiv.innerHTML = "Sorry, your search timed out. You can try again or change search term.";
+        newdiv.innerHTML = "Sorry, your search timed out. You can try again or enter different location.";
         
         document.getElementById("results").appendChild(newdiv);
     }
@@ -36,7 +35,7 @@ function getbars(){
     if (!term.replace(/\s/g, '').length) {
         document.getElementById("loader").style.display = "none";
         document.getElementById("search-term").value = "";
-        alert("Please type in your search term.");
+        alert("Please type in location.");
         clearTimeout(check);
     }
     
@@ -140,12 +139,9 @@ function getbars(){
                 newTextDiv.appendChild(newRemove);
                 
             }
-       
-            
             
             var newBrake = document.createElement("br");
             newTextDiv.appendChild(newBrake);
-            
             
             var newDescr = document.createElement("p1");
             if (bar.snippet === undefined) {
